@@ -1,7 +1,7 @@
 ﻿# **📂 React Directory App**
 A simple and modern web application built with React and Vite for managing a directory of personal entries. This app allows users to add new individuals, manage their details, and retrieve information efficiently, all within a responsive and elegant interface.
 ## **🚀 Live Demo**
-[Link to your deployed application](https://directory-app-eosin.vercel.app/)
+[Link of deployed application](https://directory-app-eosin.vercel.app/)
 
 **✨ Features**
 
