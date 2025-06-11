@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-family: "EB Garamond", serif;
+  background: linear-gradient(to right, #093b6e, #2a6195);
+  color: #e0ecff;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+.app-body {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+button {
+  background-color: #004142;
+  color: white;
+  border: none;
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #006465;
+}
+
+.addBtn{
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  margin: 2px auto;
+  padding: 10px;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.add-container,
+.retrieve-container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-container {
+  background-color: #f8f9fa;
+}
+
+.retrieve-container {
+  background-color: #e3f2fd;
+  width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+input {
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #004142;
+  color: white;
+}
+
+td {
+  background-color: #e8f1f2;
+}
+.btns {
+  display: flex;
+  gap: 13px;
+}
+.delete {
+  background-color: #dc3545;
+}
+
+.delete:hover {
+  background-color: #c82333;
+}
+
+.save {
+  background-color: #28a745;
+  margin-left: 8px;
+}
+
+.save:hover {
+  background-color: #218838;
+}
+.retrieve-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  text-align: center;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.retrieve-card h3 {
+  background-color: #3c6e71;
+  color: #d9d9d9;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.retrieve-card p {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #333;
+}
+@media (max-width: 1074px) {
+  .app-body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    width: 50%;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .retrieve-container,
+  .add-container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+    width: 100%;
+  }
+  input {
+    width: 70%;
+    margin-left: 30px;
+    text-align: center;
+  }
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  td {
+    border: none;
+    padding: 0;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    padding-left: 40%;
+    display: flex;
+    align-items: center;
+    min-height: 2.5em;
+  }
+
+  td:last-child {
+    border-bottom: none;
+  }
+
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 40%;
+    padding-left: 10px;
+    font-weight: bold;
+    background-color: #004142;
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .btns {
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* padding: 10px 0; */
+  }
+
+  .add-container,
+  .retrieve-container {
+    width: 95%;
+    margin: 10px auto;
+  }
+
+  .retrieve-container {
+    width: 95%;
+  }
+
+  .age{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
