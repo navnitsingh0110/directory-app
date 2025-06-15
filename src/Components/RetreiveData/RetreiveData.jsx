@@ -11,6 +11,7 @@ function RetreiveData() {
       setPerson(found);
     } else {
       setPerson(null);
+      alert("No Match Found.");
     }
   };
 

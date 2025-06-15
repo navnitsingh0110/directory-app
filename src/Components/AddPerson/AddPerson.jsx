@@ -2,7 +2,9 @@ import React, { useState } from "react";
 
 export default function AddPerson() {
   const [peoples, setPeoples] = useState(() => {
-    return JSON.parse(localStorage.getItem("directory")) || [];
+    const storedData = JSON.parse(localStorage.getItem("directory"));
+    return (storedData && storedData.length > 0) ? storedData : [{ name: "", dob: "", aadhar: "", mobile: "", age: "" }];
+    // return JSON.parse(localStorage.getItem("directory")) || [];
   });
 
   const addRow = () => {
